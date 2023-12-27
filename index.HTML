@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shabnam Ikram</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1be75a4252.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <span class="logo">Shabnam.</span>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Developer</p>
+                <h2>Hi, I'm <span>Shabnam,</span> <br>I develop ideas into reality.</h2>
+            </div>
+        </div>
+    </div>
+
+
+<!-- ---------------about------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h3 class="sub-title">A bit about Me</h3>
+                    <p>I am a Electonics and Telecommunication Engineer. I take into consideration the user experience while writing reusable and efficient code. <br>Apart from coding, I like mountains, Sun-sets and Pizza.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX  Designer</span><br>Designing web/mobile interface</li>
+                            <li><span>React JS Developer</span><br>JavaScript-based applications for web/mobile environments</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>June 2022 - Present</span><br>asociate Developer-Zaps rewards Pvt. Ltd</li>
+                            <li><span>March-June 2022</span><br>Intern-Zaps rewards Pvt. Ltd.</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.tech (2019-2022)</span><br>Rajiv Gandhi College of Engineering</li>
+                            <li><span>Poly-Technic (2015-2019)</span><br>Somayya Poly-Technic</li>
+                            <li><span>HSC (2013-2015)</span><br>Rafi ahmed Quidwai</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- --------services------------ -->
+
+<div id="services">
+    <div class="container">
+        <h2 class="sub-title">My services</h2>
+        <div class="servicesList">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h3>Web/App Development</h3>
+                <p>A well-crafted UI/UX design offers smooth navigation and ease of use.  Staying updated with design trends and technologies is crucial to provid cutting-edge and effective design solutions.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Skills</h3>
+                <p>User-friendly and functional web applications with creative yet effective Desing will always attract users. and while working, I've enhanced my skills with JavaScript, React, Bootstrap, HTML, CSS, jQuery, C#, .Net, SQL. c, C++</p>
+            </div>            
+
+        </div>
+
+    </div>
+</div>
+
+<!-- -------------Portfolio---------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <div class="sub-title">
+            <h3>My Work</h3>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work.jpg">
+                    <div class="layer">
+                        <h3>Rewards App</h3>
+                        <p>Zaps Rewards is a corporate loyalty program that provides employees with rewards and recognition.</p>
+                        <a href="https://zapsrewards.com/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ------------contact-------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h3>Contact Me</h3>
+                <p>If you want to know more about me or my work, or just wanna say hi, I would love to hear from you.</p>
+                <p><i class="fa-solid fa-paper-plane"></i>shabnamikram09@gmail.com</p>
+                <p><i class="fa-solid fa-mobile-retro"></i>7796164104</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shabnam-ikram-b47877248/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/shabnam_ikram/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Shabnam-Ikram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/shabnam_resume_react1.5.pdf" download id="cv" class="btn btn2"><i class="fa-regular fa-circle-down"></i>Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" id="clearName" name="Name" placeholder="Your Name" required>
+                    <input type="email" id="clearEmail" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" id="clearMessage" placeholder="Please leave your Message" rows="6"></textarea>
+                    <button type="submit" class="btn btn2 ">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ----------copyright------------ -->
+    <div class="copyright">
+        <p>made with <i class="fa-solid fa-heart"></i> by Shabnam Ikram</p>
+    </div>
+</div>
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+            // alert("you are ready");
+            document.getElementById('clearName').value = '';
+            document.getElementById('clearEmail').value = '';
+            document.getElementById('clearMessage').value = '';
+        });
+
+
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwK8nToZdHR-DHeuk6dausEhsPTExTL7iLDN0sS3cS0DayjSeVnTaj3MiKE74yUVCEY/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+           
+           // Clear form fields
+           msg.innerHTML="Message sent successfully";
+           setTimeout(() => {
+               msg.innerHTML="";
+           }, 2000);
+            document.getElementById('clearName').value = '';
+            document.getElementById('clearEmail').value = '';
+            document.getElementById('clearMessage').value = '';
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
